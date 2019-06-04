@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.pyramidweb</groupId>
+    <artifactId>pyramid-web</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <properties>
+        <gov.nist.isg.version>1.1.0</gov.nist.isg.version>
+        <junit.version>4.12</junit.version>
+        <spring.version>4.3.10.RELEASE</spring.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <!--spring.boot-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+
+
+        <dependency>
+            <!-- 开发工具 -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+        <!--<dependency>
+            &lt;!&ndash; 热加载模板框架 &ndash;&gt;
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>-->
+
+        <!--spring-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!--gov.nist.isg-->
+        <dependency>
+            <groupId>gov.nist.isg</groupId>
+            <artifactId>pyramidio</artifactId>
+            <version>${gov.nist.isg.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>gov.nist.isg</groupId>
+            <artifactId>pyramidio-cli</artifactId>
+            <version>${gov.nist.isg.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>gov.nist.isg</groupId>
+            <artifactId>generic-archiver</artifactId>
+            <version>${gov.nist.isg.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>gov.nist.isg</groupId>
+            <artifactId>hdfs-archiver</artifactId>
+            <version>${gov.nist.isg.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>gov.nist.isg</groupId>
+            <artifactId>s3-archiver</artifactId>
+            <version>${gov.nist.isg.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>gov.nist.isg</groupId>
+            <artifactId>tar-archiver</artifactId>
+            <version>${gov.nist.isg.version}</version>
+        </dependency>
+        <!--test-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <mainClass>com.pyramidweb.StartApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>mvnjar</id>
+            <name>mvnjar</name>
+            <url>https://mvnrepository.com/artifact</url>
+        </repository>
+    </repositories>
+</project>

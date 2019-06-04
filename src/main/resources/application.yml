@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+
+#tilesource properties
+tileSize: 256
+overlap: 1
+tileFormat: "jpg"
+descriptorExt: "dzi"
+
+#psring
+spring:
+  mvc:
+    static-path-pattern: /**
+  view:
+    prefix: classpath:static/fileserver/
+  resources:
+    static-locations: classpath:static/fileserver/
