@@ -9,10 +9,10 @@ tileFormat: "jpg"
 descriptorExt: "dzi"
 
 #psring
-spring:
-  mvc:
-    static-path-pattern: /**
-  view:
-    prefix: classpath:static/fileserver/
-  resources:
-    static-locations: classpath:static/fileserver/
+#spring:
+#  mvc:
+#    static-path-pattern: /**
+#  view:
+#    prefix: classpath:static/fileserver/
+#  resources:
+#    static-locations: classpath:static/fileserver/

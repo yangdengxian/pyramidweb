@@ -28,7 +28,14 @@ Start the project
 > * readDZIImage
 > * writeDZIImage
 
+**v1.1.0**
 
+> * create fileserver
+> * static files configuration
+
+#### How to config static files path in spring boot
+###### https://blog.csdn.net/yu514950381/article/details/78015088
+###### https://spring.io/blog/2013/12/19/serving-static-web-content-with-spring-boot
 
 ## dependencies
 **dependencies**
