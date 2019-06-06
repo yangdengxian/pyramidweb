@@ -24,25 +24,8 @@ public class TestDemo {
 
     @Test
     public void writeDZIByTileSourceTest() throws Exception{
-        /*WriteDZIServiceImpl writeDZIService = new WriteDZIServiceImpl();
-        String imagePath = "E:\\git\\high-image-view\\example\\images\\flower.jpg".replace("\\", "/"),
-                outOath = "/E:/data/imageDZI" ;
-        HashMap<String,Object> tileSource = new HashMap<String,Object>();
-        tileSource.put("tileSize",254);
-        tileSource.put("overlap",1);
-        tileSource.put("tileFormat","png");
-        tileSource.put("descriptorExt","dzi");
-//        writeDZIService.writeDZIByTileSource(imagePath,tileSource,outOath);
-        URL url = new URL("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2075649881,780283213&fm=26&gp=0.jpg");
-        BufferedImage image = ImageIO.read(url);
-        File file = new File("downloaded.jpg");
-        String format = FilenameUtils.getExtension(url.getPath());*/
-        HashMap<String,Object> tileSource = new HashMap<String,Object>();
-        tileSource.put("tileSize",254);
-        tileSource.put("overlap",1);
-        tileSource.put("tileFormat","png");
-        tileSource.put("descriptorExt","dzi");
-        this.getClass().getResource("classpath:/");
-        File file = new File(this.getClass().getResource("/static/").getFile());
+        URL url = new URL("http://highresolution.photography/images/washer-main.jpg");
+        BufferedImage img = ImageIO.read(url);
+        System.out.println(img);
     }
 }
