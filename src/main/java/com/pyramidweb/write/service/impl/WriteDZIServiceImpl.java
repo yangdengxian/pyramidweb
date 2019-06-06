@@ -3,6 +3,8 @@ package com.pyramidweb.write.service.impl;
 
 import java.awt.image.BufferedImage;
 import java.io.*;
+
+import com.pyramidweb.util.ImageIOUtil;
 import com.pyramidweb.write.service.WriteDZIService;
 import com.pyramidweb.util.WebFilesArchiverFactory;
 import gov.nist.isg.pyramidio.BufferedImageReader;
@@ -97,6 +99,7 @@ public class WriteDZIServiceImpl implements WriteDZIService {
                     imageFile.getName());
 
             URL url = new URL(imagePath);
+//            BufferedImage img = ImageIOUtil.read(url);
             BufferedImage img = ImageIO.read(url);
             PartialImageReader pir = new BufferedImageReader(img);
             spb.buildPyramid(pir, inputFileBaseName, archiver, 8);

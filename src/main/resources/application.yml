@@ -16,3 +16,8 @@ descriptorExt: "dzi"
 #    prefix: classpath:static/fileserver/
 #  resources:
 #    static-locations: classpath:static/fileserver/
+
+#proxy
+proxyHost: "proxy3.bj.petrochina"
+proxyPort: "8080"
+nonProxyHosts: "*.cnpc;*.petrochina;10.*;11.*;192.*"
