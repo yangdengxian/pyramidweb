@@ -18,6 +18,6 @@ descriptorExt: "dzi"
 #    static-locations: classpath:static/fileserver/
 
 #proxy
-proxyHost: "proxy3.bj.petrochina"
+proxyHost: ""
 proxyPort: "8080"
-nonProxyHosts: "*.cnpc;*.petrochina;10.*;11.*;192.*"
+nonProxyHosts: ""
