@@ -7,7 +7,7 @@ import java.net.Proxy;
 import java.net.SocketAddress;
 
 public class ProxyConfiguration {
-    private static String proxyHost="proxy3.bj.petrochina";
+    private static String proxyHost="";
 
     private static String proxyPort="8080";
 
