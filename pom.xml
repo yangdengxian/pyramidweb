@@ -18,7 +18,7 @@
     <properties>
         <gov.nist.isg.version>1.1.0</gov.nist.isg.version>
         <junit.version>4.12</junit.version>
-        <spring.version>4.3.10.RELEASE</spring.version>
+        <spring.version>6.0.0</spring.version>
         <java.version>1.8</java.version>
     </properties>
 
